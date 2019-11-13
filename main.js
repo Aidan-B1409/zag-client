@@ -1,5 +1,5 @@
 $(updateView)
 
 function updateView(){  
-    alert("Welcome to our cluuuub!")
+    alert("Caution: This Application Slays Facists")
 }
