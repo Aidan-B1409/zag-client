@@ -1,5 +1,5 @@
-$(updateView)
+$(onJoinAlert)
 
-function updateView(){  
+function onJoinAlert(){  
     alert("Caution: This Application Slays Facists")
 }
