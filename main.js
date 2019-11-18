@@ -19,3 +19,10 @@ $("#renderBtn").click(
         renderChart(data, labels);
     }
 );
+
+$.getJSON('https://zagster-service.herokuapp.com/rides/locations_and_times', function(data){
+    var text = `Start Time: ${data[0].start_time}
+                End Time: ${data[0].end_time}`
+        alert(text)
+});
+
