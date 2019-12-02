@@ -26,3 +26,10 @@ $.getJSON('https://zagster-service.herokuapp.com/rides/locations_and_times', fun
         console.log(text)
 });
 
+var person = {name:"PutYourNameHere",age:"PutYourAgeHere",car:{make:"Chevy",model:"Silverado"}}
+
+$(greeter)
+function greeter(){
+    alert("Hi" + person.name);
+}
+
