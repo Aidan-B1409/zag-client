@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>ZagViz</title>
         <meta charset="utf-8"/>
-        
-        <!--JQuery-->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <!--Link to javascript and CSS-->
+
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--Local CSS-->
         <link href="universal.css" media="screen" rel="stylesheet" type="text/css"/>
 
     </head>
     <body>
         <header>
-            <h1>Zagster Bikes in Bend</h1>
+            <div class="jumbotron text-center">
+                <h1 class="text-dark mx auto" id="page_headtext">Zagster Bike Data</h1>
+            </div>   
         </header>
-        <section>
-            <h2>TODO:</h2>
-            <p>Total Rides</p>
-
-            <img src="media/mockup.jpg">
-
-            <button id="renderBtn">
-                Render
-            </button>
+        <section id="about">
+            <div id="AboutProject" class="row d-flex justify-content-center">
+                <div id="card" class="col-md-11 card mb4 box-shadow">
+                    <div id="cardhead">
+                        <h1 id="cardheadtext">About This Project</h1>
+                    </div>
+                    <div id="cardbody" class="text-justify">
+                        <p>This site pulls from Oregon State's API for the Zagster rideshare bikes deployed around Bend.</p>
+                        <p>It then uses chart.js to visualize the most popular rental start time in a specific year.</p>
+                        <p>This project was created for OSU-Cascades' CS-160 Intro to Computer Science course.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="chart">
             <div class="container">
                 <canvas id="myChart"></canvas>
             </div>
@@ -31,8 +39,8 @@
 
         </footer>
     </body>
-    <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
 </html>
 
