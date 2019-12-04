@@ -1,6 +1,26 @@
 body {
     font-family: "HelveticaNeue", "Arial", sans-serif;
-  }
+}
 h2 {
     font-size: 250%;
+}
+#page_headtext{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 350%;
+  text-decoration: underline;
+}
+
+div#card{
+  padding-top: 50px;
+  padding-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div#cardhead{
+  border-bottom: 3px solid black;
+  width: 100%;
+}
+h1#cardheadtext{
+  font-family: 'Roboto Mono', monospace;
+  font-style: bold;
+  font-size: 200%
 }
